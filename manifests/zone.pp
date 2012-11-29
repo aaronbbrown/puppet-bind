@@ -147,7 +147,8 @@ define bind::zone (
             path        => ['/bin','/usr/bin'],
             notify      => Service["named"],
             command     => "find ${file}.d -maxdepth 1 \\( -type f -or -type l \\) -print0 | sort -nz | xargs -0 cat | sed \"s/%%SERIAL%%/`date +%s`/g\" > ${file}",
-            refreshonly => true;
+            refreshonly => true,
+            require     => Concatfile['/etc/named.conf'];
         }
 
         concatfile::part { "${file}.d/00_header":

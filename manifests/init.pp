@@ -29,14 +29,6 @@ class bind (
     }
 
     file {
-        '/etc/named.conf.d' :
-            require => Package["bind-chroot"],
-            owner   => "root",
-            group   => "root",
-            purge   => $purge,
-            recurse => true,
-            force   => true,
-            ensure  => directory;
         "/etc/named/views.d":
             require => Package["bind-chroot"],
             owner   => "root",

@@ -1,5 +1,5 @@
 name    'fr3nd-bind'
-version '0.0.2'
+version '0.0.3'
 source 'https://github.com/fr3nd/puppet-bind'
 author 'fr3nd'
 license 'Apache License, Version 2.0'
