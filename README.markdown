@@ -57,10 +57,10 @@ bind::zone::record {
 Requirements
 ------------
 
-* puppet-concat module https://github.com/ripienaar/puppet-concat
+* concatfile module [anselm/concatfile](https://github.com/amsibamsi/puppet-concatfile)
 
 Authors
 -------
 
 * **Carles Amigo** <fr3nd at fr3nd dot net>
-
+* **[Aaron Brown](https://github.com/9minutesnooze)** 

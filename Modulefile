@@ -1,0 +1,10 @@
+name    'fr3nd-bind'
+version '0.0.1'
+source 'https://github.com/fr3nd/puppet-bind'
+author 'fr3nd'
+license 'Apache License, Version 2.0'
+
+summary 'A Puppet module to fully manage bind.'
+description 'There are many bind puppet modules arround but none of those is able to manage a full configuration like creating new zones or dns records. Using this module you will never need to manually edit a zone file again.'
+project_page 'https://github.com/fr3nd/puppet-bind'
+dependency 'anselm/concatfile'
